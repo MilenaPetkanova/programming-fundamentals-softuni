@@ -1,19 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _0102_AddTwoNumbers
+class AddTwoNumbers
 {
-    class AddTwoNumbers
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
-            int sum = a + b;
-            Console.WriteLine($"{a} + {b} = {sum}");
-        }
+        int a = int.Parse(Console.ReadLine());
+        int b = int.Parse(Console.ReadLine());
+        int sum = a + b;
+        Console.WriteLine($"{a} + {b} = {sum}");
     }
 }
