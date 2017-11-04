@@ -151,23 +151,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1004_MergeFiles", "1004_Mer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1005_FolderSize", "1005_FolderSize\1005_FolderSize.csproj", "{2AC7E052-9B5C-43A4-B853-DE4EF7582374}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1101_ReverseString", "1101_ReverseString\1101_ReverseString.csproj", "{6ECA5A8F-80DF-4468-B743-FAF93E72476A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1101_ReverseString", "1101_ReverseString\1101_ReverseString.csproj", "{6ECA5A8F-80DF-4468-B743-FAF93E72476A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1100_StringsAndTextProcessing_Demo", "1100_StringsAndTextProcessing_Demo\1100_StringsAndTextProcessing_Demo.csproj", "{1AB34291-6C68-4931-80A4-8D2F414D05FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1100_StringsAndTextProcessing_Demo", "1100_StringsAndTextProcessing_Demo\1100_StringsAndTextProcessing_Demo.csproj", "{1AB34291-6C68-4931-80A4-8D2F414D05FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1102_CountSubstringOccurances", "1102_CountSubstringOccurances\1102_CountSubstringOccurances.csproj", "{28F4AAA6-5152-42AF-8141-35C24B886427}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1102_CountSubstringOccurances", "1102_CountSubstringOccurances\1102_CountSubstringOccurances.csproj", "{28F4AAA6-5152-42AF-8141-35C24B886427}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1201_MatchFullName", "1201_MatchFullName\1201_MatchFullName.csproj", "{E139016A-1179-4075-9B8D-E1FE0F11AEC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1201_MatchFullName", "1201_MatchFullName\1201_MatchFullName.csproj", "{E139016A-1179-4075-9B8D-E1FE0F11AEC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1202_MatchPhoneNumber", "1202_MatchPhoneNumber\1202_MatchPhoneNumber.csproj", "{5710ACC0-E529-44A0-8F73-72B31C17C53B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1202_MatchPhoneNumber", "1202_MatchPhoneNumber\1202_MatchPhoneNumber.csproj", "{5710ACC0-E529-44A0-8F73-72B31C17C53B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1203_MatchHexadecimalNumber", "1203_MatchHexadecimalNumber\1203_MatchHexadecimalNumber.csproj", "{2E3A5DBF-2559-4BF0-93AF-B1B148D97160}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1203_MatchHexadecimalNumber", "1203_MatchHexadecimalNumber\1203_MatchHexadecimalNumber.csproj", "{2E3A5DBF-2559-4BF0-93AF-B1B148D97160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1205_MatchNumbers", "1205_MatchNumbers\1205_MatchNumbers.csproj", "{C44413D2-223E-45A6-BC8C-34C5342D0917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1205_MatchNumbers", "1205_MatchNumbers\1205_MatchNumbers.csproj", "{C44413D2-223E-45A6-BC8C-34C5342D0917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1204_MatchDates", "1204_MatchDates\1204_MatchDates.csproj", "{068C6754-8CD4-4583-A788-51921ABF985B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1204_MatchDates", "1204_MatchDates\1204_MatchDates.csproj", "{068C6754-8CD4-4583-A788-51921ABF985B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1206_ReplaceATag", "1206_ReplaceATag\1206_ReplaceATag.csproj", "{E88706C7-89C6-4426-8A11-6D7839E6AF91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1206_ReplaceATag", "1206_ReplaceATag\1206_ReplaceATag.csproj", "{E88706C7-89C6-4426-8A11-6D7839E6AF91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1103_TestFilter", "1103_TestFilter\1103_TestFilter.csproj", "{0869AF5B-8BCD-4314-B6C3-952DC1BDB620}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1104_Palindromes", "1104_Palindromes\1104_Palindromes.csproj", "{8DF330DA-1766-48EF-933A-F083BA22B26D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -507,6 +511,14 @@ Global
 		{E88706C7-89C6-4426-8A11-6D7839E6AF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E88706C7-89C6-4426-8A11-6D7839E6AF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E88706C7-89C6-4426-8A11-6D7839E6AF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0869AF5B-8BCD-4314-B6C3-952DC1BDB620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0869AF5B-8BCD-4314-B6C3-952DC1BDB620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0869AF5B-8BCD-4314-B6C3-952DC1BDB620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0869AF5B-8BCD-4314-B6C3-952DC1BDB620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF330DA-1766-48EF-933A-F083BA22B26D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF330DA-1766-48EF-933A-F083BA22B26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF330DA-1766-48EF-933A-F083BA22B26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF330DA-1766-48EF-933A-F083BA22B26D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
