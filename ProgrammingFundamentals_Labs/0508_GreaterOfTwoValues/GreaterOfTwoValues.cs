@@ -1,10 +1,8 @@
 ﻿using System;
 
-namespace _0508_GreaterOfTwoValues
-{
     class GreaterOfTwoValues
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var type = Console.ReadLine();
 

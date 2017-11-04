@@ -1,57 +1,50 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _0509_MultiplyEvensByOdds
+class MultiplyEvensByOdds
 {
-    class MultiplyEvensByOdds
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            int input = int.Parse(Console.ReadLine());
-            input = Math.Abs(input);
+        int input = int.Parse(Console.ReadLine());
+        input = Math.Abs(input);
 
-            int result = GetEvensByOdds(input);
-            Console.WriteLine(result);
-        }
+        int result = GetEvensByOdds(input);
+        Console.WriteLine(result);
+    }
 
-        static int GetEvensByOdds(int input)
-        {
-            int sumEvens = GetsumEvens(input);
-            int sumOdds = GetSumOdds(input);
-            return sumEvens * sumOdds;
-        }
+    static int GetEvensByOdds(int input)
+    {
+        int sumEvens = GetsumEvens(input);
+        int sumOdds = GetSumOdds(input);
+        return sumEvens * sumOdds;
+    }
 
-        private static int GetsumEvens(int input)
+    private static int GetsumEvens(int input)
+    {
+        int sumEvens = 0;
+        while (input > 0)
         {
-            int sumEvens = 0;
-            while (input > 0) 
+            int evensChecker = input % 10;
+            if (evensChecker % 2 == 0)
             {
-                int evensChecker = input % 10;
-                if (evensChecker % 2 == 0)
-                {
-                    sumEvens += evensChecker;
-                }
-                input = input / 10;
+                sumEvens += evensChecker;
             }
-            return sumEvens;
+            input = input / 10;
         }
+        return sumEvens;
+    }
 
-        private static int GetSumOdds(int input)
+    private static int GetSumOdds(int input)
+    {
+        int sumOdds = 0;
+        while (input > 0)
         {
-            int sumOdds = 0;
-            while (input > 0)
+            int oddsChecker = input % 10;
+            if (oddsChecker % 2 == 1)
             {
-                int oddsChecker = input % 10;
-                if (oddsChecker % 2 == 1)
-                {
-                    sumOdds += oddsChecker;
-                }
-                input = input / 10;
+                sumOdds += oddsChecker;
             }
-            return sumOdds;
+            input = input / 10;
         }
+        return sumOdds;
     }
 }
