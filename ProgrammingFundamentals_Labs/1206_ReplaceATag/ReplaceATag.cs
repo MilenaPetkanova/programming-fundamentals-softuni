@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-public class Example
+public class ReplaceATag
 {
     public static void Main()
     {
@@ -20,9 +20,9 @@ public class Example
             text = Console.ReadLine();
         }
 
-        foreach (var line in result)
+        foreach (var row in result)
         {
-            Console.WriteLine($"{line}");
+            Console.WriteLine($"{row}");
         }
     }
 }

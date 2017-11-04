@@ -7,7 +7,7 @@ class MatchingFullName
     {
         string input = Console.ReadLine();
 
-        string pattern = @"\b[A-Z][a-z]+ [A-Z][a-z]+\b";
+        string pattern = @"\b[A-Z][a-z]+\s[A-Z][a-z]+\b";
 
         foreach (Match m in Regex.Matches(input, pattern))
         {

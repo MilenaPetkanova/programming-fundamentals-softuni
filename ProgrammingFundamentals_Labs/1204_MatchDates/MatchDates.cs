@@ -6,7 +6,10 @@ class MatchDates
     static void Main()
     {
         string input = Console.ReadLine();
-        string pattern = @"\b(?<day>\d{2})([-.\/])(?<month>[A-Z][a-z]{2})\1(?<year>\d{4})\b";
+        string pattern = @"\b(?<day>\d{2})
+                            ([-.\/])
+                            (?<month>[A-Z][a-z]{2})\1
+                            (?<year>\d{4})\b";
 
         var dates = Regex.Matches(input, pattern);
 
