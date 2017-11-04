@@ -1,5 +1,4 @@
-# programming-fundamentals-softuni
-Programming Fundamentals - September 2017 - Software University
+# Programming Fundamentals - September 2017 - Software University
 
 ProgrammingFundamentals_Labs -> 83 projects
 
