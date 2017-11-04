@@ -2,19 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _0705_SortNumbers
+class SortNumbers
 {
-    class SortNumbers
+    static void Main()
     {
-        static void Main(string[] args)
-        {
+        List<double> numbers = Console.ReadLine()
+            .Split(' ').Select(double.Parse).ToList();
 
-            List<double> numbers = Console.ReadLine()
-                .Split(' ').Select(double.Parse).ToList();
+        numbers.Sort();
 
-            numbers.Sort();
-
-            Console.WriteLine(String.Join(" <= ", numbers));
-        }
+        Console.WriteLine(String.Join(" <= ", numbers));
     }
 }
