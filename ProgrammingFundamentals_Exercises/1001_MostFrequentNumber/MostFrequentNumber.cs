@@ -1,14 +1,13 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.IO;
 
 class MostFrequentNumber
 {
     static void Main(string[] args)
     {
-        string inputTest1 = File.ReadAllText("inputTest1.txt");
-        string inputTest2 = File.ReadAllText("inputTest2.txt");
-        string inputTest3 = File.ReadAllText("inputTest3.txt");
+        string inputTest1 = File.ReadAllText(@"test files\inputTest1.txt");
+        string inputTest2 = File.ReadAllText(@"test files\inputTest2.txt");
+        string inputTest3 = File.ReadAllText(@"test files\inputTest3.txt");
 
         string[] allinputTests = { inputTest1, inputTest2, inputTest3 };
 
@@ -39,8 +38,8 @@ class MostFrequentNumber
                 }
                 numFrqu = 0;
             }
-            File.WriteAllText($"outputTest{test + 1}.txt", maxFrequ.ToString());
-            Console.WriteLine(maxFrequ);
+            File.Delete($@"test files\outputTest{test + 1}.txt");
+            File.WriteAllText($@"test files\outputTest{test + 1}.txt", maxFrequ.ToString());
         }
     }
 }
