@@ -23,7 +23,7 @@ class MergeFiles
                 result.Add(linesTwo[i]);
             }
 
-            File.WriteAllLines("Output.txt", result);
+            File.WriteAllLines("output.txt", result);
         }
         catch (Exception)
         {

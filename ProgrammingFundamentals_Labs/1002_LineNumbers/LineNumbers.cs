@@ -6,9 +6,11 @@ class LineNumbers
 {
     static void Main()
     {
-        string[] allLines = File.ReadAllLines("input.txt");
+        string[] allLines = File.ReadAllLines("Input.txt");
+
         var numberedLines = allLines
             .Select((line, index) => $"{index + 1}. {line}");
+
         File.WriteAllLines("output.txt", numberedLines);
 
         //Same result:
