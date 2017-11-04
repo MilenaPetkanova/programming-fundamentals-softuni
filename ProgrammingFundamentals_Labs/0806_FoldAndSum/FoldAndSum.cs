@@ -18,7 +18,9 @@ class FoldAndSum
 
         var secondLine = numbers.Skip(k).Take(2 * k).ToArray();
 
-        var sum = firstLine.Select((x, index) => x + secondLine[index]).ToArray();
+        var sum = firstLine
+            .Select((x, index) => x + secondLine[index])
+            .ToArray();
 
         Console.WriteLine(String.Join(" ", sum));
     }

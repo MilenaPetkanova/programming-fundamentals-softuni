@@ -2,40 +2,36 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _0802_OddOccurences
+class OddOccurences
 {
-    class OddOccurences
+    static void Main()
     {
-        static void Main(string[] args)
+        var input = Console.ReadLine().ToLower()
+            .Split(' ').ToArray();
+
+        var count = new Dictionary<string, int>();
+
+        foreach (var word in input)
         {
-
-            var input = Console.ReadLine().ToLower()
-                .Split(' ').ToArray();
-                
-            var count = new Dictionary<string, int>();
-
-            foreach (var word in input)
+            if (count.ContainsKey(word))
             {
-                if (count.ContainsKey(word))
-                {
-                    count[word]++;
-                }
-                else
-                {
-                    count[word] = 1;
-                }
+                count[word]++;
             }
-
-            List<string> result = new List<string>();
-            foreach (var pair in count)
+            else
             {
-                if (pair.Value % 2 == 1)
-                {
-                    result.Add(pair.Key);
-                }  
+                count[word] = 1;
             }
-            Console.WriteLine(String.Join(", ", result));
         }
 
+        List<string> result = new List<string>();
+        foreach (var pair in count)
+        {
+            if (pair.Value % 2 == 1)
+            {
+                result.Add(pair.Key);
+            }
+        }
+
+        Console.WriteLine(String.Join(", ", result));
     }
 }

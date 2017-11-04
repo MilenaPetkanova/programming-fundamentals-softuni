@@ -2,39 +2,34 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _0801_CountRealNumbers
+class CountRealNumbers
 {
-    class CountRealNumbers
+    static void Main()
     {
-        static void Main(string[] args)
+        var nums = Console.ReadLine().Split(' ')
+                    .Select(double.Parse).ToArray();
+        var count = new SortedDictionary<double, int>();
+
+        foreach (var num in nums)
         {
-            var nums = Console.ReadLine().Split(' ')
-                        .Select(double.Parse).ToArray();
-            var count = new SortedDictionary<double, int>();
-
-            foreach (var num in nums)
+            if (count.ContainsKey(num))
             {
-                if (count.ContainsKey(num))
-                {
-                    count[num]++;
-                }
-                else
-                {
-                    count[num] = 1;
-                }
+                count[num]++;
             }
-
-            foreach (var item in count)
+            else
             {
-                Console.WriteLine("{0} -> {1}", item.Key, item.Value);
+                count[num] = 1;
             }
-            //Same:
-            //foreach (var num in count.Keys)
-            //{
-            //    Console.WriteLine($"{num} -> {count[num]}");
-            //}
-
-
         }
+
+        foreach (var item in count)
+        {
+            Console.WriteLine("{0} -> {1}", item.Key, item.Value);
+        }
+        //Same:
+        //foreach (var num in count.Keys)
+        //{
+        //    Console.WriteLine($"{num} -> {count[num]}");
+        //}
     }
 }

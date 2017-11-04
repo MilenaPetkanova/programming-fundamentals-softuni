@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 class SumMinMaxAverage
 {
     static void Main()
     {
-
         int n = int.Parse(Console.ReadLine());
 
         int[] nums = new int[n];
