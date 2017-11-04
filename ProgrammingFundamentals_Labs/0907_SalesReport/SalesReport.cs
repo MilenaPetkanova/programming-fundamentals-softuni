@@ -16,7 +16,7 @@ class SalesReport
     {
         Sale[] sales = ReadSales();
 
-        //Approach I - Dictionary{town -> sales} 
+        //Approach I -> Dictionary{town -> sales} 
         var totalSales = new SortedDictionary<string, decimal>();
         foreach (var sale in sales)
         {
@@ -31,11 +31,15 @@ class SalesReport
         }
         PrintTotalSales(totalSales);
 
-        //Approach II - LINQ
-        //var towns = sales.Select(s => s.Town).Distinct().OrderBy(t => t);
+        //Approach II -> LINQ
+        IOrderedEnumerable towns = sales
+            .Select(s => s.Town)
+            .Distinct()
+            .OrderBy(t => t);
         //foreach (string town in towns)
         //{
-        //    var salesByTown = sales.Where(s => s.Town == town)
+        //    var salesByTown = sales
+        //.Where(s => s.Town == town)
         //      .Select(s => s.Price * s.Quantity);
         //    Console.WriteLine("{0} -> {1:f2}", town, salesByTown.Sum());
         //}

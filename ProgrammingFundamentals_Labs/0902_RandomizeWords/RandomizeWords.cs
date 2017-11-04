@@ -19,7 +19,6 @@ class RandomizeWords
 
             Console.WriteLine(textArgs[i]);
         }
-
         
     }
 }
