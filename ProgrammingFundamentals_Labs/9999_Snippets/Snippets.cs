@@ -4,11 +4,13 @@ using System;
 
 class Snippets
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        //TO DO:
-        ///08.Dictionaries - Lambda - LINQ
-
+        ////matchescastarr
+        //var validPhones = phoneMatches
+        //    .Cast<Match>()
+        //    .Select(x => x.Value.Trim())
+        //    .ToArray(); 
 
         ////cwdkv
         //Console.WriteLine("{0} -> {1}", pair.Key, pair.Value);
@@ -22,7 +24,29 @@ class Snippets
         ////cwsjl
         //Console.WriteLine(String.Join(", ", result));
 
-        ////-foreachdcounter
+        ////foreachd
+        //foreach (var contact in phonebook)
+        //{
+        //    Console.WriteLine("{0} -> {1}", contact.Key, contact.Value);
+        //}
+
+        ////foreachdall
+        //foreach (var contact in phonebook)
+        //{
+        //    Console.WriteLine("{0} -> {1}", contact.Key, contact.Value);
+        //}
+
+
+        ////foreachdremove
+        //var itemsToRemove = emailList
+        //    .Where(f => f.Value.Contains(".us") || f.Value.Contains(".uk"))
+        //    .ToArray();
+        //foreach (var item in itemsToRemove)
+        //{
+        //    emailList.Remove(item.Key);
+        //}
+
+        ////foreachdcounter
         //foreach (dictionary word in input)
         //{
         //    if (count.ContainsKey(word))
@@ -43,6 +67,17 @@ class Snippets
         //    Console.WriteLine("Line " + index++);
         //    line = Console.ReadLine();
         //}
+
+        ////crlstringseparators
+        //var words = Console.ReadLine()
+        //    .Split(separators, StringSplitOptions.RemoveEmptyEntries)
+        //    .ToList();
+
+
+        ////crl
+        //var items = Console.ReadLine().Split(' ')
+        //    .Select(int.Parse).ToList();
+
 
     }
 }
