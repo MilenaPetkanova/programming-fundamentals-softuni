@@ -12,7 +12,7 @@ class StringsAndTextProcessing
         //str[2] = 'a'; // Error!
 
         ////String are UNICODE
-        //string greeting = "îăşâţ"; 
+        //string greeting = "îăşâţ";
         //Console.OutputEncoding = System.Text.Encoding.UTF8;
         //Console.WriteLine(greeting);
 
@@ -23,9 +23,9 @@ class StringsAndTextProcessing
 
         ////Case-insensitive string comparison:
         //int result = string.Compare(str1, str2, true);
-        // result == 0 if str1 equals str2
-        // result < 0 if str1 is before str2
-        // result > 0 if str1 is after str2
+        //result == 0 if str1 equals str2
+        //result < 0 if str1 is before str2
+        //result > 0 if str1 is after str2
 
         ////Case-sensitive string comparison:
         //int result = string.Compare(str1, str2, false);
@@ -38,26 +38,26 @@ class StringsAndTextProcessing
         //string verse = "To be or not to be…";
         //int lastIndex = verse.LastIndexOf("be"); // 16
 
-        //IndexOf
-        const string value = "Your dog is cute.";
-        if (value.IndexOf("dog") != -1)
-        {
-            Console.WriteLine("string contains dog!");
-        }
+        ////IndexOf
+        //const string value = "Your dog is cute.";
+        //if (value.IndexOf("dog") != -1)
+        //{
+        //    Console.WriteLine("string contains dog!");
+        //}
 
-        string s = "I have a cat";
-        // Loop through all instances of the letter a.
-        int counter = 0;
-        int i = 0;
-        while ((i = s.IndexOf('a', i)) != -1)
-        {
-            // Print out the substring.
-            Console.WriteLine(s.Substring(i));
+        //string s = "I have a cat";
+        //// Loop through all instances of the letter a.
+        //int counter = 0;
+        //int i = 0;
+        //while ((i = s.IndexOf('a', i)) != -1)
+        //{
+        //    // Print out the substring.
+        //    Console.WriteLine(s.Substring(i));
 
-            // Increment the index.
-            counter++;
-            i++;
-        }
+        //    // Increment the index.
+        //    counter++;
+        //    i++;
+        //}
 
     }
 }
