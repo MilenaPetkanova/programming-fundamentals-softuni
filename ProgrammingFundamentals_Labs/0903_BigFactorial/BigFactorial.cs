@@ -5,7 +5,6 @@ class BigFactorial
 {
     static void Main()
     {
-
         int num = int.Parse(Console.ReadLine());
 
         BigInteger numFactorial = 1;

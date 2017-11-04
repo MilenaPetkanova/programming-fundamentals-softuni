@@ -14,10 +14,10 @@ class ClosestTwoPoints
         Point[] points = ReadPoints();
         Point[] closestPoints = FindClosestPoints(points);
 
-        PrintDistAndClosestPoints(closestPoints);
+        PrintDistClosestPoints(closestPoints);
     }
 
-    private static void PrintDistAndClosestPoints(Point[] closestPoints)
+    private static void PrintDistClosestPoints(Point[] closestPoints)
     {
         double minDistance = GetDistBtwnTwoPoints(closestPoints[0], closestPoints[1]);
         Console.WriteLine("{0:f3}", minDistance);

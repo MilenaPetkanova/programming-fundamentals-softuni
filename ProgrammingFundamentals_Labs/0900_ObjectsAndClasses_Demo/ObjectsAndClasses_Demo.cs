@@ -62,9 +62,7 @@ class ObjectsAndClasses_Demo
             int pos2 = rnd.Next(words.Length);
             // TODO: swap words[pos1] with words[pos2]
         }
-        Console.WriteLine(string.Join
-                        ("Environment.NewLine", words));
+        Console.WriteLine(string.Join(" ", words, Environment.NewLine));
 
-        //
     }
 }
