@@ -16,6 +16,7 @@ class PokeMon
         {
             n -= m;
             countPokes++;
+
             if (n == exhN)
             {
                 if (y != 0)
@@ -23,6 +24,7 @@ class PokeMon
                     n = n / y;
                 }
             }
+            
             if (n < m)
             {
                 break;

@@ -3,7 +3,7 @@ using System.Linq;
 
 class PokemonDontGo
 {
-    static void Main(string[] args)
+    static void Main()
     {
         int[] pokemons = Console.ReadLine().Split(' ')
                     .Select(int.Parse).ToArray();
